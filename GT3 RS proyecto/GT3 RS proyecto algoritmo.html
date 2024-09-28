@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo - ¿Cómo comprar un GT3 RS?</title>
+    <script>
+        function ejecutarAlgoritmo() {
+            let respuesta = prompt("¿Cómo tener un GT3 RS?\n ¿Tienes dinero?\n A: Si tengo dinero pero no para un GT3 RS\n B: Si tengo dinero\n C: No tengo dinero").toUpperCase();
+            
+            while (respuesta !== 'A' && respuesta !== 'B' && respuesta !== 'C') {
+                alert("Error, responda de manera correcta (A, B o C)");
+                respuesta = prompt("¿Cómo tener un GT3 RS?\n ¿Tienes dinero?\n A: Si tengo dinero pero no para un GT3 RS\n B: Si tengo dinero\n C: No tengo dinero").toUpperCase();
+            }
+
+            if (respuesta === 'A') {
+                alert("¡Blasfemia, Compra un GT3 RS!");
+            } else if (respuesta === 'B') {
+                alert("Compra un GT3 RS :D");
+            } else if (respuesta === 'C') {
+                let respuesta2 = prompt("¿Tienes trabajo? A=Si, B=No").toUpperCase();
+                // Continuar con el resto de la lógica
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Algoritmo - ¿Cómo comprar un GT3 RS?</h1>
+    <button onclick="ejecutarAlgoritmo()">Iniciar Algoritmo</button>
+</body>
+</html>
